@@ -14,11 +14,12 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    background: rgb(48, 46, 46);
+    background: rgb(43, 35, 35);
     color: rgb(252, 44, 44);
     font-size: 40px;
     text-transform: uppercase;
     gap: 20px;
+    text-shadow: 3px 2px 1px rgb(6, 206, 196);
 
 }
 
@@ -28,6 +29,7 @@ nav{
     justify-content: space-evenly;
     text-align: center;
     padding: 10px 0px;
+    padding-bottom: 30px;
 
 
 }
@@ -38,9 +40,10 @@ nav{
     justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
-    padding: 60px;
+    padding: 30px;
     border-radius: 10px;
-    width: 80%;
+    gap: 40px;
+    
     
 }
 
@@ -49,6 +52,7 @@ nav{
     border: 1px solid black;
     border-radius: 50%;
     padding: 20px;
+    box-shadow: 2px 2px 4px rgb(48, 46, 46);
 
 }
 
@@ -88,11 +92,51 @@ nav{
     transform: translateX(-8px) ;
     animation-duration: 30s;
 
+    /* COMEÇANDO A ESTRUTURAÇÃO DO MAIN */
+}
+main{
+    background: #393E46;
+    gap: 20px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+#bloco{
+    background: #393E46;
+    padding: 50px;
+    padding-top: 26px;
+    max-width: 50vh;
+    justify-content: center;
+    
+
+    
+
+}
+#titulo-conteudo-bloco{
+    background: #4A102A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
 }
 
-@media(max-width:1340px){
-    #foto-link{
-        gap: 40px;
-    }
+#titulo-conteudo-bloco img{
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+#paragrafo-conteudo-bloco{
+    background:#7C4585;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
+
+
+
+
