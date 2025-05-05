@@ -28,14 +28,14 @@ nav{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding: 10px 0px;
+    padding: 20px 0px;
     padding-bottom: 30px;
 
 
 }
 
  #foto-link{
-    background: rgb(192, 66, 87);
+    background: radial-gradient(circle, #910606 20%, rgb(255, 0, 0) 80%);
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -57,7 +57,7 @@ nav{
 }
 
 #foto-link ul{
-    background: rgb(255, 0, 0);
+    background: radial-gradient(circle, #a51f1f 20%, rgb(255, 4, 4) 80%);
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -71,11 +71,12 @@ nav{
 #foto-link ul li{
     list-style: none;
     text-decoration: none;
-    background: rgb(128, 130, 255);
+    background: rgb(93, 228, 122);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 4px 4px 5px rgb(36, 34, 34);
     transition: transform 0.2s ease 0.2s;
+    font-size: 20px;
     
     
 }
@@ -88,7 +89,7 @@ nav{
 }
 
 #foto-link ul li:hover{
-    background:  rgb(116, 118, 252);
+    background:  rgb(72, 214, 103);
     transform: translateX(-8px) ;
     animation-duration: 30s;
 
@@ -121,6 +122,7 @@ main{
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    text-transform: uppercase;
   
 }
 
@@ -134,6 +136,16 @@ main{
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+
+}
+
+@media(max-width:768px){
+    #inicio{
+        font-size: 25px;
+    }
+    #foto-link ul li{
+        font-size: 10px;
+    }
 
 }
 
