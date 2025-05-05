@@ -6,6 +6,9 @@
 
 #conteudo{
     background: #393E46;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 
@@ -21,6 +24,9 @@
     gap: 20px;
     text-shadow: 3px 2px 1px rgb(6, 206, 196);
 
+}
+header{
+    background: #393E46;
 }
 
 nav{
@@ -101,6 +107,7 @@ main{
     padding: 0px;
     display: flex;
     justify-content: center;
+    flex: 3;
 }
 #bloco{
     background: #393E46;
@@ -136,15 +143,84 @@ main{
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    color: rgb(6, 112, 6);
 
 }
 
+#conteudo-aside-titulo2{
+    background: rgb(2, 187, 17);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+#conteudo-aside-paragrafo2{
+    background: rgb(47, 223, 126);
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+
+}
+
+#conteudo-aside-paragrafo2 ul{
+    padding-left: 10px;
+}
+
+#conteudo-aside-titulo1{
+    background: rgb(2, 187, 17);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    
+}
+#conteudo-aside-paragrafo1{
+    background: rgb(47, 223, 126);
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+
+}
+#conteudo-aside-paragrafo2 ul {
+    padding-left: 10px;
+}
+
+footer{
+    background: blue;
+}
+
+
+
+
+
+
+
+
+
+
 @media(max-width:768px){
     #inicio{
-        font-size: 25px;
+        font-size: 15px;
     }
     #foto-link ul li{
         font-size: 10px;
+    }
+    #conteudo{
+        flex-direction: column;
+    }
+    aside #conteudo-aside-paragrafo2{
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 0;
+     
+    }
+    aside #conteudo-aside-titulo2{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0;
+
     }
 
 }
