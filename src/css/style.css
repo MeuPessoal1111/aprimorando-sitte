@@ -213,15 +213,6 @@ footer .footer-content{
 
 
 
-
-
-
-
-
-
-
-
-
 @media(max-width:768px){
     #inicio{
         font-size: 15px;
@@ -229,24 +220,43 @@ footer .footer-content{
     #foto-link ul li{
         font-size: 10px;
     }
+    #foto-link{
+        gap: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 0%;
+    }
+  
     #conteudo{
         flex-direction: column;
     }
+    aside{
+        width: 100%;
+    }
     aside #conteudo-aside-paragrafo2{
-      border-bottom-right-radius: 10px;
+      display: flex;
+      justify-content: center;
       border-bottom-left-radius: 0;
      
     }
     aside #conteudo-aside-titulo2{
-        border-top-right-radius: 10px;
         border-top-left-radius: 0;
-        
     }
+
     #conteudo{
         padding-bottom: 30px;
 
     }
+    aside #conteudo-aside-paragrafo1{
+        display: flex;
+        justify-content: center;
+        border-bottom-right-radius: 0;
 
+    }
+    aside #conteudo-aside-titulo1{
+        border-top-right-radius: 0;
+    }
+  
 
 }
 
