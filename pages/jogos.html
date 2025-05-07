@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jogos</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/jogo.css">
     <link rel="icon" href="./src/assets/icon4.png">
+    <script src="../src/js/jogo.js"defer></script>
 </head>
 <body>
 
@@ -34,6 +35,56 @@
         </nav>
 
     </header>
+
+        <div id="conteudo">
+            <div id="informacao-jogo">
+
+                <div id="agrupar">
+
+                    <section id="conteudo-infomacoes">
+                        <h3>Usuario</h3>
+                        <input type="text" value="coloque aqui" id="nomeUsuario" onclick="sumir()">
+                        <button onclick="colocarNome()">confirmar</button>
+                        <p id="resposta">...</p>
+                        <p>O objetivo é acertar o numero secreto:P,o numero será gerada de forma aleatoria</p>
+                    </section>
+        
+                    <section id="jogo-numero">
+                        <p>O numero secreto esta entre o numero 1 e 100</p>
+                        <input type="number" id="colocarNumeroImput">
+                        <button onclick="acionarNumero()" id="botaoNumero">confirmar</button>
+        
+        
+                    </section>
+
+                </div>
+
+                <section id="conteudo-resposta">
+
+                    <div id="titulo-resposta">
+                        <h3 id="conferencia">conferencia</h3>
+
+                    </div>
+                    <div id="dicas-resposta">
+                        <h3>dicas</h3>
+                        <p id="reposta-dica">kkk</p>
+
+                    </div>
+                    <div id="final-resposta">
+                        <p>Suas tentativas miseraveis:...</p>
+                        <p id="pResposta">... </p>
+                        <button>reiniciar</button>
+
+                    </div>
+                    
+
+
+                </section>
+
+            </div>
+
+
+        </div>
     
 </body>
 </html>
